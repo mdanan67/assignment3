@@ -46,7 +46,7 @@ button:hover {
   letter-spacing: 5px;
 }
 section {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 span{
     height: 5px;
@@ -61,7 +61,7 @@ span{
 /* custom seceltion code */
 
 header {
-  background-image: url(../image/pexels-nicole-avagliano-1132392-2749481.jpg);
+  background-image: url(../image/pexels-bella-white-201200-635279.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -120,15 +120,15 @@ nav ul li a {
   width: 170px;
   background-color: red;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 7px;
   margin: auto;
 }
 
 /* upcomming event */
 .event-title h2 {
   text-align: center;
-  font-weight: 700;
-  margin: 30px 0 20px 0;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
 }
 .event-title span{
   height: 5px;
@@ -154,7 +154,7 @@ nav ul li a {
   width: 601px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.159) 12.95px 12.95px 2.6px;
+  box-shadow: rgba(63, 51, 51, 0.159) 10.95px 10.95px 1.6px;
 }
 .event h3 {
   margin: 30px 0 0 0;
@@ -175,7 +175,7 @@ nav ul li a {
 /* Discover Nature's Hidden Beauty */
 
 .discover-main{
-    background-image: url(../image/pexels-nout-gons-80280-248159.jpg);
+    background-image: url(../image/pexels-nicole-avagliano-1132392-2749481.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,17 +206,17 @@ nav ul li a {
 
 /* tour */
 .tour-parent {
-    padding: 50px;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 .tour filter {
   margin-top: 30px;
 }
 
 .tour h4 {
-    margin: 0;
+    margin-top: 5px;
 }
 .tour span {
     height: 5px;
@@ -234,19 +234,19 @@ nav ul li a {
 }
 .tour img {
     width: 100%;
-    border-radius: 11px;
+    border-radius: 10px;
 }
 
 .img1 {
     height: 300px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .img2 {
 
 height: 400px;
 
-margin-bottom: 30px;
+/* margin-bottom: 30px; */
 }
 footer {
     padding: 100px;
@@ -261,7 +261,9 @@ footer {
     font-size: 30px;
     color: white;
 }
-
+#main-title{
+  margin-bottom: 20px;
+}
 
 
 @media (max-width: 600px) {
@@ -290,17 +292,19 @@ footer {
   }
 
   .navbar {
-    color: white;
+  color: white;
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 30px 60px;
+  padding: 10px 30px;
   flex-wrap: wrap; 
+  position: fixed;
+
   }
 
-  nav ul li {
-    display: flex;
-    margin: 10px 0;
+  nav ul li{
+    display: inline-block;
+    margin: 20px 0;
   }
 
   .banner {
@@ -309,7 +313,7 @@ footer {
 
   .event-main {
     grid-template-columns: 1fr;
-    margin: 30px 20px 0 20px;
+    margin: 5px 0px 0 5px;
   }
 
   .event img {
@@ -330,7 +334,12 @@ footer {
 
   .tour-parent {
     grid-template-columns: 1fr;
-    padding: 30px 20px;
+    padding: 0px 0px;
+    padding-bottom: 0px;
+    grid-gap: 0px;
+    margin-bottom: 10px;
+    
+    
   }
 
   .img1,
@@ -342,7 +351,9 @@ footer {
     padding: 50px 20px;
   }
 
-  .tour span,
+  .tour a{
+      
+  }
   .event-title span,
   .banner span {
     width: 100px;
@@ -354,4 +365,127 @@ footer {
 .logo a{
   display: block;
 }
+
+section {
+  margin: 0px 0px;
+  padding: 0px;
+
+}
+div .eventsecendimage{
+   
+  margin-bottom: 0px;
+
+}
+.tour img{
+
+
+margin: 0px;
+
+
+}
+#main-title h4{
+    margin-top: px;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+    
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    margin: 0;
+  }
+
+  nav ul {
+    padding-top: 15px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .banner {
+    padding: 80px 20px;
+  }
+
+  .event-main {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+
+  .event img {
+    width: 100%;
+    height: auto;
+  }
+
+  .discover-parent {
+    flex-direction: column;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .discover {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .tour-parent {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    grid-gap: 20px;
+  }
+
+  .img1,
+  .img2 {
+    height: auto;
+    width: 100%;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  .event-title span,
+  .banner span,
+  .tour span {
+    width: 120px;
+  }
+
+  #main-title {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
 }
